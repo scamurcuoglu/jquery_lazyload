@@ -125,6 +125,8 @@
                                 var elements_left = elements.length;
                                 settings.load.call(self, elements_left, settings);
                             }
+
+                            $(this).remove();
                         })
                         .attr("src", $self.attr("data-" + settings.data_attribute));
                 }
